@@ -1,1 +1,105 @@
+SOAL 
+1. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan
+penjelasannya!
 
+JAWABAN :
+h1 { ... }
+Ini styling langsung ke semua elemen <h1> di halaman.
+Jadi setiap <h1> yang ada di HTML otomatis kena aturan ini.
+CONTOH :
+h1 {
+  color: red;
+}
+
+#intro h1 { ... }
+Ini lebih spesifik. Artinya: “Styling <h1> yang ada di dalam elemen dengan id="intro".”
+Jadi nggak semua <h1> kena, hanya yang ada di dalam container #intro.
+CONTOH :
+#intro h1 {
+  color: blue;
+}
+PERBEDAANYA :
+Cakupan - h1 untuk semua, #intro h1 terbatas.
+Spesifisitas - #intro h1 lebih kuat dibanding h1 biasa.
+
+SOAL 
+2. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada
+elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan
+penjelasan dan contohnya!
+
+JAWABAN :
+internal CSS, eksternal CSS, dan inline CSS diterapkan pada elemen yang sama, maka yang akan ditampilkan di browser adalah inline CSS.
+Alasannya: CSS bekerja dengan konsep cascade (mengalir dari atas ke bawah) dan specificity (tingkat kekuatan selektor). Urutannya
+1. Eksternal CSS (paling lemah).
+2. Internal CSS (lebih kuat dari eksternal).
+3. Inline CSS (paling kuat karena langsung ditulis di elemen).
+4. Kalau ada !important, maka itu yang menang walaupun levelnya lebih rendah.
+
+CONTOH :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Prioritas CSS</title>
+
+  <!-- Eksternal CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <!-- Inline CSS -->
+  <p style="color: red;">Ini teks paragraf</p>
+</body>
+</html>
+
+style.css (eksternal):
+
+p {
+  color: green;
+}
+
+SOAL
+3. elemen HTML yang punya ID dan class sekaligus, lalu keduanya punya deklarasi CSS yang berbeda, maka yang akan ditampilkan browser adalah deklarasi dari ID, karena ID punya tingkat kekuatan (specificity) lebih tinggi dibanding class.
+
+JAWABAN :
+Urutan specificity (dari yang paling kuat → lemah):
+1. Inline CSS (style di atribut elemen).
+2. ID Selector (#id).
+3. Class Selector, pseudo-class (.class, :hover, dll).
+4. Element Selector (p, h1, dll).
+
+CONTOH :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh ID vs Class</title>
+
+  <style>
+    /* Class Selector */
+    .text-paragraf {
+      color: blue;
+      font-size: 18px;
+    }
+
+    /* ID Selector */
+    #paragraf-1 {
+      color: red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <p id="paragraf-1" class="text-paragraf">
+    Halo Bos Muda, ini contoh paragraf!
+  </p>
+</body>
+</html>
+Kesimpulannya :
+kalau ID dan class bertabrakan, CSS dari ID yang menang. Tapi kalau properti yang diatur berbeda (misalnya ID atur warna, class atur ukuran), maka dua-duanya tetap berlaku.
