@@ -2,7 +2,7 @@
 
 
 
-#Tampilan awal
+#Tampilan awal#
 Di tahap ini, HTML sudah dibuat tapi belum ada internal CSS.
 Teks masih pakai default style browser:
 Judul <h1> tampil besar dan tebal hitam.
@@ -80,7 +80,7 @@ Background merah
 Teks putih
 Bentuk kotak dengan padding yang jelas
 
-#Teknik CSS yang Digunakan:
+#Teknik CSS yang Digunakan:#
 Kemungkinan besar menggunakan kombinasi:
 CSS Internal (di dalam tag <style> di HTML) untuk styling umum
 Inline CSS (langsung di tag HTML) untuk styling spesifik
