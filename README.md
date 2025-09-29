@@ -45,3 +45,45 @@ Perubahan yang terlihat:
 <i> di dalam <h1> (kata Inline CSS) berubah warna abu-abu.
 Font keseluruhan berubah dari Times New Roman ke sans-serif.
 <p> sudah diberi inline CSS → style="text-align: center; color: #ccd8e4;" sehingga teks paragraf jadi rata tengah dengan warna abu-abu kebiruan.
+
+
+Gambar 3
+
+<img width="950" height="1071" alt="Screenshot 2025-09-29 142021" src="https://github.com/user-attachments/assets/f0bc0293-36fa-4ce9-a7ff-b6561ef2cefe" />
+
+
+Sebelum Styling (HTML Dasar)
+Tampilan halaman web yang masih sangat sederhana dengan karakteristik:
+Judul "CSS Internal dan Inline CSS" di bagian atas
+Navigasi hijau dengan 3 tombol: "CSS Dasar", "CSS Eksternal", "HTML Dasar"
+Teks "Hello World" berwarna biru tua/navy
+Paragraf penjelasan dengan warna abu-abu terang (hampir tidak terlihat)
+Link "Informasi selengkapnya" berwarna biru standar
+Background putih polos
+Layout minimal tanpa styling khusus
+
+
+Gambar 4
+
+<img width="963" height="1078" alt="Screenshot 2025-09-29 142105" src="https://github.com/user-attachments/assets/4d293257-574e-4ab7-818d-502db293d64b" />
+
+
+
+Setelah Styling (Dengan CSS)
+Tampilan halaman web yang sudah diberi styling CSS dengan perubahan:
+Perubahan Visual:
+Background biru tosca/teal menutupi sebagian besar halaman
+Teks "Hello World" sekarang berwarna putih dan lebih kontras
+Paragraf sekarang berwarna putih dan mudah dibaca dengan latar biru
+Button "Informasi selengkapnya" berubah menjadi:
+Background merah
+Teks putih
+Bentuk kotak dengan padding yang jelas
+
+#Teknik CSS yang Digunakan:
+Kemungkinan besar menggunakan kombinasi:
+CSS Internal (di dalam tag <style> di HTML) untuk styling umum
+Inline CSS (langsung di tag HTML) untuk styling spesifik
+Perubahan warna background, font color, padding, dan styling button
+
+
