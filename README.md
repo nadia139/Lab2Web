@@ -2,7 +2,7 @@
 
 
 
-##Tampilan awal
+#Tampilan awal
 Di tahap ini, HTML sudah dibuat tapi belum ada internal CSS.
 Teks masih pakai default style browser:
 Judul <h1> tampil besar dan tebal hitam.
@@ -52,7 +52,7 @@ Gambar 3
 <img width="950" height="1071" alt="Screenshot 2025-09-29 142021" src="https://github.com/user-attachments/assets/f0bc0293-36fa-4ce9-a7ff-b6561ef2cefe" />
 
 
-##Sebelum Styling (HTML Dasar)
+#Sebelum Styling (HTML Dasar)
 Tampilan halaman web yang masih sangat sederhana dengan karakteristik:
 Judul "CSS Internal dan Inline CSS" di bagian atas
 Navigasi hijau dengan 3 tombol: "CSS Dasar", "CSS Eksternal", "HTML Dasar"
@@ -69,7 +69,7 @@ Gambar 4
 
 
 
-##Setelah Styling (Dengan CSS)
+#Setelah Styling (Dengan CSS)
 Tampilan halaman web yang sudah diberi styling CSS dengan perubahan:
 Perubahan Visual:
 Background biru tosca/teal menutupi sebagian besar halaman
@@ -80,7 +80,7 @@ Background merah
 Teks putih
 Bentuk kotak dengan padding yang jelas
 
--Teknik CSS yang Digunakan:
+#Teknik CSS yang Digunakan:
 Kemungkinan besar menggunakan kombinasi:
 CSS Internal (di dalam tag <style> di HTML) untuk styling umum
 Inline CSS (langsung di tag HTML) untuk styling spesifik
